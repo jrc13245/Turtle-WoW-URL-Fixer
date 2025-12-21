@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Turtle-WoW URL Fixer",
+  "version": "1.0",
+  "description": "Automatically redirects old turtle-wow.org URLs to the new turtlecraft.gg domain",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "*://*.turtle-wow.org/*",
+    "*://turtle-wow.org/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
