@@ -39,6 +39,8 @@ This extension uses Chrome's `declarativeNetRequest` API to intercept requests a
 - ✅ Brave
 - ✅ Other Chromium-based browsers
 
+Manifest Version 3 conform.
+
 ## License
 
 MIT — Feel free to use, modify, and share.
