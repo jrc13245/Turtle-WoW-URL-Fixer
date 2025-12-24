@@ -2,6 +2,12 @@
   "manifest_version": 3,
   "name": "Turtle-WoW URL Fixer",
   "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "turtle-wow-url-fixer@example.com",
+      "strict_min_version": "109.0"
+    }
+  },
   "description": "Automatically redirects old turtle-wow.org URLs to the new turtlecraft.gg domain",
   "permissions": ["declarativeNetRequest"],
   "host_permissions": [

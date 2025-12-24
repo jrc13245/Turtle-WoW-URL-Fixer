@@ -1,6 +1,6 @@
-# 🐢 Turtle-WoW URL Fixer
+# Turtle-WoW URL Fixer
 
-A Chrome/Edge extension that automatically redirects all old Turtle WoW URLs to the new turtlecraft.gg domain.
+A browser extension that automatically redirects all old Turtle WoW URLs to the new turtlecraft.gg domain.
 
 ## Why?
 
@@ -19,6 +19,18 @@ All paths and query parameters are preserved.
 
 ## Installation
 
+### Firefox
+
+1. Download the [latest release](../../releases/latest) (ZIP file)
+2. Extract the ZIP to a folder
+3. Open Firefox and go to `about:debugging#/runtime/this-firefox`
+4. Click **Load Temporary Add-on**
+5. Select the `manifest.json` file from the extracted folder
+
+For permanent installation, install from [Firefox Add-ons](https://addons.mozilla.org).
+
+### Chrome/Edge
+
 1. Download the [latest release](../../releases/latest) (ZIP file)
 2. Extract the ZIP to a folder
 3. Open Chrome/Edge and go to `chrome://extensions` (or `edge://extensions`)
@@ -30,16 +42,17 @@ That's it! Old Turtle WoW links will now automatically redirect.
 
 ## How it works
 
-This extension uses Chrome's `declarativeNetRequest` API to intercept requests at the network level — before DNS resolution even happens. This means it works even though the old domain no longer exists.
+This extension uses the `declarativeNetRequest` API to intercept requests at the network level — before DNS resolution even happens. This means it works even though the old domain no longer exists.
 
 ## Compatibility
 
-- ✅ Google Chrome
-- ✅ Microsoft Edge
-- ✅ Brave
-- ✅ Other Chromium-based browsers
+- Firefox 109+
+- Google Chrome
+- Microsoft Edge
+- Brave
+- Other Chromium-based browsers
 
-Manifest Version 3 conform.
+Manifest Version 3 compliant.
 
 ## License
 
@@ -47,4 +60,4 @@ MIT — Feel free to use, modify, and share.
 
 ---
 
-*For the Turtle WoW community* 🐢
+*For the Turtle WoW community*
